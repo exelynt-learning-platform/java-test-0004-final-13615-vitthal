@@ -1,7 +1,12 @@
-public class Test4{
+import java.util.Scanner;
+
+public class Test4 {
     public static void main(String[] args) {
 
-        int n = 4;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n: ");
+        int n = sc.nextInt();
+
         int size = 2 * n - 1;
 
         for (int i = 0; i < size; i++) {
@@ -18,5 +23,7 @@ public class Test4{
             }
             System.out.println();
         }
+
+        sc.close();
     }
 }
